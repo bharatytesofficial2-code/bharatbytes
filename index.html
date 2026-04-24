@@ -503,7 +503,31 @@
     .nav-links { display: none; }
     .form-row { grid-template-columns: 1fr; }
     section { padding: 70px 5vw; }
+  }.about-avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff4d1c;
+  display: block;
+  margin: 0 auto 1.2rem;
+
+  /* Glow animation */
+  animation: glowPulse 2.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow:
+      0 0 5px rgba(255, 77, 28, 0.4),
+      0 0 20px rgba(255, 77, 28, 0.5);
   }
+  to {
+    box-shadow:
+      0 0 15px rgba(255, 77, 28, 0.8),
+      0 0 45px rgba(255, 77, 28, 0.7);
+  }
+}
 </style>
 </head>
 <body>
